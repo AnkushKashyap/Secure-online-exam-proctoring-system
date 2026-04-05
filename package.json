@@ -1,0 +1,25 @@
+{
+  "name": "secure-exam-proctoring-system",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "node server.js",
+    "dev:full": "concurrently \"npm run dev:server\" \"npm run dev\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@aws-sdk/client-rekognition": "^3.901.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.2.1",
+    "vite": "^5.4.10"
+  }
+}

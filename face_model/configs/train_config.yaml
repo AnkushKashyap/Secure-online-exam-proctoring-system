@@ -1,0 +1,12 @@
+dataset_id: fareselmenshawii/face-detection-dataset
+raw_data_dir: data/raw
+prepared_data_dir: data/prepared
+model_output_dir: artifacts
+base_model: yolov8n.pt
+epochs: 30
+imgsz: 640
+batch: 8
+device: 0
+project_name: examguard-face-detector
+class_names:
+  - face

@@ -1,0 +1,212 @@
+export const users = [
+  {
+    id: "stu-1",
+    role: "student",
+    name: "Ananya Sharma",
+    email: "student@gmail.com",
+    password: "1234",
+  },
+  {
+    id: "fac-1",
+    role: "faculty",
+    name: "Dr. Rohan Mehta",
+    email: "faculty@gmail.com",
+    password: "1234",
+  },
+  {
+    id: "adm-1",
+    role: "admin",
+    name: "System Admin",
+    email: "admin@gmail.com",
+    password: "1234",
+  },
+];
+
+export const initialExams = [
+  {
+    id: "exam-101",
+    title: "Data Structures Midterm",
+    code: "DSA-204",
+    durationMinutes: 90,
+    startsAt: "2026-04-01T16:30:00+05:30",
+    status: "live",
+    facultyId: "fac-1",
+    instructions: [
+      "Keep webcam and microphone enabled for the full duration.",
+      "Share your entire screen before entering the exam room.",
+      "Leaving fullscreen or switching tabs triggers a red flag.",
+    ],
+    questions: [
+      {
+        id: "q1",
+        prompt: "Which data structure works on the Last In First Out principle?",
+        options: ["Queue", "Stack", "Heap", "Graph"],
+        correctOption: 1,
+      },
+      {
+        id: "q2",
+        prompt: "What is the average time complexity of binary search on a sorted array?",
+        options: ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+        correctOption: 1,
+      },
+      {
+        id: "q3",
+        prompt: "Which traversal visits nodes in the order left subtree, root, right subtree?",
+        options: ["Preorder", "Postorder", "Inorder", "Level order"],
+        correctOption: 2,
+      },
+      {
+        id: "q4",
+        prompt: "Which data structure is commonly used to implement recursion internally?",
+        options: ["Stack", "Queue", "Array", "Linked list"],
+        correctOption: 0,
+      },
+      {
+        id: "q5",
+        prompt: "In a max-heap, the parent node is always:",
+        options: [
+          "Smaller than both children",
+          "Equal to the root only",
+          "Greater than or equal to its children",
+          "Greater than the left child only",
+        ],
+        correctOption: 2,
+      },
+    ],
+  },
+  {
+    id: "exam-102",
+    title: "Operating Systems Quiz",
+    code: "OS-118",
+    durationMinutes: 45,
+    startsAt: "2026-04-01T18:00:00+05:30",
+    status: "live",
+    facultyId: "fac-1",
+    instructions: [
+      "Only one monitor is allowed.",
+      "No phones or additional notes are permitted.",
+    ],
+    questions: [
+      {
+        id: "os1",
+        prompt: "Which scheduling algorithm can cause starvation?",
+        options: ["FCFS", "Round Robin", "Priority Scheduling", "FIFO"],
+        correctOption: 2,
+      },
+      {
+        id: "os2",
+        prompt: "What is a deadlock?",
+        options: [
+          "A process waiting for CPU",
+          "Two or more processes waiting indefinitely for resources",
+          "A process finished successfully",
+          "A scheduling interruption",
+        ],
+        correctOption: 1,
+      },
+    ],
+  },
+  {
+    id: "exam-103",
+    title: "Computer Networks Assessment",
+    code: "CN-307",
+    durationMinutes: 60,
+    startsAt: "2026-04-01T19:00:00+05:30",
+    status: "live",
+    facultyId: "fac-1",
+    instructions: [
+      "Keep your face visible throughout the exam.",
+      "The full screen remains monitored after you start sharing it.",
+      "Submit before the timer ends to avoid auto-submission.",
+    ],
+    questions: [
+      {
+        id: "cn1",
+        prompt: "Which layer of the OSI model is responsible for routing?",
+        options: ["Transport", "Network", "Data Link", "Session"],
+        correctOption: 1,
+      },
+      {
+        id: "cn2",
+        prompt: "What does HTTP primarily operate on?",
+        options: ["Port 25", "Port 53", "Port 80", "Port 21"],
+        correctOption: 2,
+      },
+      {
+        id: "cn3",
+        prompt: "Which device forwards packets between networks?",
+        options: ["Switch", "Hub", "Router", "Repeater"],
+        correctOption: 2,
+      },
+    ],
+  },
+];
+
+export const initialSessions = [
+  {
+    id: "session-1001",
+    examId: "exam-101",
+    studentId: "stu-1",
+    status: "ready",
+    startedAt: null,
+    submittedAt: null,
+    riskLevel: "low",
+    faceStatus: "pending",
+    screenStatus: "not-shared",
+    answers: {},
+    currentQuestionIndex: 0,
+    alerts: [],
+    activityLog: [
+      {
+        id: "log-1",
+        type: "system",
+        message: "Session created and waiting for readiness checks.",
+        timestamp: new Date().toISOString(),
+      },
+    ],
+  },
+  {
+    id: "session-1002",
+    examId: "exam-102",
+    studentId: "stu-1",
+    status: "ready",
+    startedAt: null,
+    submittedAt: null,
+    riskLevel: "low",
+    faceStatus: "pending",
+    screenStatus: "not-shared",
+    answers: {},
+    currentQuestionIndex: 0,
+    alerts: [],
+    activityLog: [
+      {
+        id: "log-2",
+        type: "system",
+        message: "Operating Systems session is available for this student.",
+        timestamp: new Date().toISOString(),
+      },
+    ],
+  },
+  {
+    id: "session-1003",
+    examId: "exam-103",
+    studentId: "stu-1",
+    status: "ready",
+    startedAt: null,
+    submittedAt: null,
+    riskLevel: "low",
+    faceStatus: "pending",
+    screenStatus: "not-shared",
+    answers: {},
+    currentQuestionIndex: 0,
+    alerts: [],
+    activityLog: [
+      {
+        id: "log-3",
+        type: "system",
+        message: "Networks assessment is available for this student.",
+        timestamp: new Date().toISOString(),
+      },
+    ],
+  },
+];
