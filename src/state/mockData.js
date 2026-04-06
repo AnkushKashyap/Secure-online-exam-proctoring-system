@@ -3,7 +3,7 @@ export const users = [
     id: "stu-1",
     role: "student",
     name: "Ankush Kashyap",
-    email: "241036009@juitsolan.in",
+    email: "241036009@gmail.com",
     password: "1234",
   },
   {
