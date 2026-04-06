@@ -7,14 +7,14 @@ export const users = [
     password: "1234",
   },
   {
-    id: "stu-1",
+    id: "stu-2",
     role: "student",
     name: "Anshul Sharma",
     email: "241034018@juitsolan.in",
     password: "1234",
   },
   {
-    id: "stu-1",
+    id: "stu-3",
     role: "student",
     name: "Anvi Sharma",
     email: "241030259@juitsolan.in",
