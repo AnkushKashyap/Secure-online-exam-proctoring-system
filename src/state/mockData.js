@@ -3,7 +3,21 @@ export const users = [
     id: "stu-1",
     role: "student",
     name: "Ankush Kashyap",
-    email: "student@gmail.com",
+    email: "241036009@juitsolan.in",
+    password: "1234",
+  },
+  {
+    id: "stu-2",
+    role: "student",
+    name: "Anshul Sharma",
+    email: "241034018@juitsolan.in",
+    password: "1234",
+  },
+  {
+    id: "stu-3",
+    role: "student",
+    name: "Anvi Sharma",
+    email: "241030259@juitsolan.in",
     password: "1234",
   },
   
