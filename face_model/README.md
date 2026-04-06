@@ -64,6 +64,22 @@ python infer.py --image path\\to\\image.jpg
 uvicorn api:app --reload --port 9000
 ```
 
+## Run with Docker
+
+Build the container from inside `face_model`:
+
+```bash
+docker build -t examguard-face-api .
+```
+
+Run the API on port `9000`:
+
+```bash
+docker run -p 9000:9000 examguard-face-api
+```
+
+If you want the model container to use your locally trained weights, keep the `artifacts/` folder inside `face_model` before building.
+
 ## Next step after dataset download
 
 After you download the dataset, send me the folder structure or a file listing from `face_model/data/raw`, and I will adapt the preparation script exactly to that dataset.

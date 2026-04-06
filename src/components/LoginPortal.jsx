@@ -46,10 +46,7 @@ export default function LoginPortal() {
             Sign in as student, faculty, or admin to continue into the monitored exam workflow.
           </p>
           <input
-            className="input"
-            type="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            className="input" type="email" value={email} onChange={(event) => setEmail(event.target.value)}
             placeholder="Email"
           />
           <input

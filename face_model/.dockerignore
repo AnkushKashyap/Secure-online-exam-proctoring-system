@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+scripts/__pycache__/
+yolo26n.pt
+yolov8n.pt

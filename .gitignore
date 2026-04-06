@@ -4,6 +4,9 @@ dist/
 .venv/
 runs/
 tmp_test.txt
+__pycache__/
+*.pyc
+face_model/*.pt
 face_model/.venv/
 face_model/data/
 face_model/artifacts/
